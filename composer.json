@@ -1,0 +1,28 @@
+{
+    "name": "jimmwo/random-number",
+    "description": "Package for random number generation",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jimmwo\\RandomNumber\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jimmwo\\RandomNumber\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "anton.trotsenko",
+            "email": "anton.trotsenko@softlabs.com"
+        }
+    ]
+}
