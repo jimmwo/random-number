@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+PHP=`which php`
+$PHP generator.php "$@"

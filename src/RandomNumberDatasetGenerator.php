@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Jimmwo\RandomNumber;
 
-use Jimmwo\RandomNumber\Service\RandomNumber;
 use RuntimeException;
 use Throwable;
 
 class RandomNumberDatasetGenerator
 {
+    private const PATH_TO_SAVE = '.';
     private RandomNumber $service;
 
     public function __construct()
@@ -21,8 +21,9 @@ class RandomNumberDatasetGenerator
         int $selections,
         int $range,
         bool $isUnique,
-        string $pathToSave = '.'
+        ?string $pathToSave = null
     ): void {
+        $pathToSave = $pathToSave ?? self::PATH_TO_SAVE;
         $fileName = sprintf(
             'random-dataset-%d-%d-%d-%s-%s.csv',
             $draws,

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Jimmwo\RandomNumber\Service;
+namespace Jimmwo\RandomNumber;
 
 use Jimmwo\RandomNumber\DTO\RandomNumberResultDto;
 
