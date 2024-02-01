@@ -57,7 +57,7 @@ class RandomNumberDatasetGenerator
 
                 fputcsv($fp, $numbers);
 
-                if ($i % 1000000 === 0) {
+                if ($i % 100000 === 0) {
                     echo sprintf(
                         "'Generated %d/%d (%d%%) draws. %.2f have passed%s",
                         $i,
