@@ -55,7 +55,7 @@ class RandomNumberDatasetGenerator
                     $numbers[] = $this->service->getRandomNumber(0, $range, $excludedNumbers)->getNumber();
                 }
 
-                fputcsv($fp, $numbers);
+                fputcsv($fp, $numbers, ' ');
 
                 if ($i % 100000 === 0) {
                     echo sprintf(
